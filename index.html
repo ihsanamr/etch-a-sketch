@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Etch-a-sketch</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <h1>ETCH-A-SKETCH</h1>
+    </header>
+
+    <main>
+      <div class="container">
+        <div id="settings-section">
+          <div id="density-info">
+            <p>CURRENT SIZE</p>
+            <p id="current-density">16 x 16</p>
+          </div>
+
+          <div id="grid-density-input">
+            <label for="grid-density">NEW SIZE</label>
+
+            <div class="input-section">
+              <input
+                type="number"
+                id="grid-density"
+                name="grid-density"
+                min="1"
+                max="100"
+                value="16"
+              />
+
+              <button id="update-btn">SET</button>
+            </div>
+
+            <p>VALID RANGE: 1-100</p>
+          </div>
+
+          <div id="mode-buttons">
+            <button id="classic-btn">CLASSIC</button>
+            <button id="rainbow-mode">RAINBOW</button>
+            <button id="clear-btn">CLEAR</button>
+          </div>
+        </div>
+
+        <div id="grid-container"></div>
+      </div>
+    </main>
+  </body>
+</html>
