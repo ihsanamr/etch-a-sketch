@@ -12,7 +12,7 @@ This project strengthened my comprehension of:
 - Event listeners for mouse interactions (mousedown, mouseup, mouseover).
 - Implementing progressive opacity effects for visual feedback.
 - Managing state with variables to track drawing modes and interactions.
-- Using CSS Grid and Flexbox for layout and responsive design.
+- Using Flexbox for grid layout.
 
 ## Features
 
@@ -27,7 +27,7 @@ This project strengthened my comprehension of:
 ## Built With
 
 - HTML5
-- CSS3 (Flexbox & Grid)
+- CSS3 (Flexbox)
 - JavaScript (ES6)
 
 ## Project Structure
