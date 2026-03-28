@@ -39,8 +39,10 @@ button {
     flex-wrap: wrap;
     height: 500px;
     width: 500px;
-    background-color: #ACABAB;
+    background-color: #FFFFFF;
     border-radius: 1rem;
+    padding: 20px;
+    /* overflow: hidden; */
 }
 
 #settings-section {
@@ -111,4 +113,9 @@ button {
     align-items: center;
     justify-content: center;
     gap: 4rem;
+}
+
+.grid-item {
+    border: 1px solid #66002A;
+    background-color: white;
 }
