@@ -77,14 +77,26 @@ button {
     width: 140px;
     padding: 1rem 1rem;
     border-radius: 0.5rem;
+    border: 3px solid #5E5E5E;
+    color: #5E5E5E;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+#mode-buttons button:hover {
+    transform: scale(1.1);
+}
+
+#classic-mode:hover,
+#rainbow-mode:hover {
     background-color: #5E5E5E;
     color: #F2F0F0;
-    border: none;
-    font-size: 1rem;
 }
 
 #mode-buttons #clear-btn {
+    border: none;
     background-color: #C94B4B;
+    color: #F2F0F0;
 }
 
 #current-density {
@@ -99,6 +111,11 @@ button {
     background-color: #5E5E5E;
     color: #F2F0F0;
     border: none;
+    transition: all 0.3s ease;
+}
+
+#update-btn:hover {
+    transform: scale(1.1);
 }
 
 #grid-density {
@@ -118,4 +135,10 @@ button {
 .grid-item {
     border: 1px solid #66002A;
     background-color: white;
+}
+
+#classic-mode.mode-active,
+#rainbow-mode.mode-active {
+    background-color: #5E5E5E;
+    color: #F2F0F0;
 }

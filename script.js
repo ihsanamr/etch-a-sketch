@@ -11,6 +11,8 @@ const defaultSize = 16;
 let isDrawing = false;
 let currentMode = "classic";
 
+classicMode.classList.add("mode-active");
+
 function getRandomColors() {
   let r, g, b;
   r = Math.floor(Math.random() * 256);
@@ -74,19 +76,19 @@ submitBtn.addEventListener("click", () => {
 
   if (!size) {
     alert(
-      "Isi size dengan angka yang valid! (size dikembalikan ke ukuran default 16 x 16)",
+      "Please enter a valid size value! (size has been reset to the default 16 x 16)",
     );
     size = 16;
   }
 
   if (size < 1) {
     alert(
-      "Isi size dengan angka yang valid! (size dikembalikan ke ukuran default 16 x 16)",
+      "Please enter a valid size value! (size has been reset to the default 16 x 16)",
     );
     size = 16;
   } else if (size > 100) {
     alert(
-      "Isi size dengan angka yang valid! (size dikembalikan ke ukuran default 16 x 16)",
+      "Please enter a valid size value! (size has been reset to the default 16 x 16)",
     );
     size = 16;
   }
@@ -122,8 +124,12 @@ clearBtn.addEventListener("click", () => {
 
 rainbowMode.addEventListener("click", () => {
   currentMode = "rainbow";
+  rainbowMode.classList.add("mode-active");
+  classicMode.classList.remove("mode-active");
 });
 
 classicMode.addEventListener("click", () => {
   currentMode = "classic";
+  classicMode.classList.add("mode-active");
+  rainbowMode.classList.remove("mode-active");
 });
